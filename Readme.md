@@ -1,14 +1,5 @@
-
-<h3 align="center">
-  <a href="https://github.com/wforguo/wedding-app" title="趣婚礼">趣婚礼</a>
-</h3>
-
 <p align="center">
-  <img alt="趣婚礼 Logo" src="https://forguo-1302175274.cos.ap-shanghai.myqcloud.com/wedding/assets/img/qrcode.jpeg" width="180">
-</p>
-
-<p align="center">
-    <a href="https://github.com/wforguo/wedding-app" title="趣婚礼">基于Taro2 + 云开发 打造婚礼邀请函</a>
+    基于Taro2 + 云开发 打造婚礼邀请函
 </p>
 
 有问题请issue
@@ -203,10 +194,8 @@ yarn
 **需要在控制台去开启云开发，并获取DBID（数据库初始化用到）**
 
 * 1. 云开发入口
-![云开发入口](https://forguo-1302175274.cos.ap-shanghai.myqcloud.com/enter.png)
 
 * 2. 数据库配置
-![云开发](https://forguo-1302175274.cos.ap-shanghai.myqcloud.com/cloud.png)
 
 ### 数据库
 
@@ -241,7 +230,6 @@ db.collection('wedding_msgs')
 ```
 这样每次都比较麻烦，所以我做了统一的处理，都写在`service/cloud/index.js`当中，并export，只需要按需引入，并传入要操作的数据库名称即可。
 
-![云数据库](https://forguo-1302175274.cos.ap-shanghai.myqcloud.com/wedding/assets/img/db_function.png)
 
 **Tips：如果发现数据库有数据，但是拿不到所有数据，那应该就是数据库的权限问题了，改成仅创建者可写，所有人可读就可以了**
 
@@ -318,8 +306,6 @@ exports.main = async function (event, context) {
 
 这次的版本使用了Taro + 云开发，后面打算出一版`Taro + Antd + koa2 + MongoDb`的版本，初步内容已经差不错了，详见下面项目地址
 
-[Taro + Antd + koa2 + MongoDb](https://github.com/wforguo/wedding)
-
 ## Taro3的坑
 
 - redux使得下拉刷新和上拉加载冲突
@@ -332,27 +318,17 @@ exports.main = async function (event, context) {
 
 ## 关于
 
-<h3 align="center">
-  <a href="https://forguo-1302175274.cos.ap-shanghai.myqcloud.com/wedding/assets/img/wechart.jpg" title="微信：iforguo">微信：iforguo</a>
-</h3>
 
-<p align="center">
-  <img alt="微信：iforguo" src="https://forguo-1302175274.cos.ap-shanghai.myqcloud.com/wedding/assets/img/wechart.jpg" width="480">
-</p>
-
-- [个人主页](https://www.forguo.cn)
-- [CSDN](https://blog.csdn.net/WEIGUO19951107/article/details/88411078)
 - [掘金](https://juejin.im/post/6844904015793242120)
 
 ---
 
 本项目仅供学习和交流，部分素材来源于网络，如有侵权联系删除。
 项目有需改进也请留言和Issues，
-如有合作请在[博客](https://blog.csdn.net/WEIGUO19951107/article/details/88411078)留言或wx：（`iforguo`）。
 
 ---
 
-编码不易，感谢各位大佬的吐槽和[GitHub](https://github.com/wforguo/wedding-app)的Star
+编码不易，感谢star
 
 
 有问题请issue【这样也方便别人查阅】
